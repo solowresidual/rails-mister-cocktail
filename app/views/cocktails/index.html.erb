@@ -1,0 +1,10 @@
+<h1>My Cocktails Page</h1>
+
+
+<% @cocktails.each do |cocktail| %>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()>
+  <p> <%= cocktail.name %></p>
+</div>
+<% end %>
+
+<%= link_to 'Add a Cocktail!', new_cocktail_path %>
